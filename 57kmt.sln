@@ -13,11 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinhThueVAT", "TinhThueVAT\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webABC", "webABC\webABC.csproj", "{0638BF5E-33B8-4C73-A14A-D2B4D462C89A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7B9EDA7C-5950-4EF9-B58D-449CA260BD08}"
-	ProjectSection(SolutionItems) = preProject
-		d:\my documents\Desktop\Abc.pdf = d:\my documents\Desktop\Abc.pdf
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
