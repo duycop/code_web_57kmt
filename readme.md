@@ -50,4 +50,4 @@
 
    code xử ký y sì như Sum_use_DLL
 
-   Xem code [win form use DLL](app)
+   Xem code [win form use DLL](TinhThueVAT)
