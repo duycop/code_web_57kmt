@@ -32,6 +32,22 @@
 
    add references tới project lib_toan
 
+   thiết kế giao diện form
+
    phần xử lý đẩy cho DLL xử lý
 
-   [xem code dùng dll](sum_use_dll)
+   [xem code dùng dll](Sum_use_DLL)
+
+4. Windows form App: dùng DLL
+
+   C# Windows Desktop
+
+   windows form application (.Net framework) 
+
+   add reference tới project lib_toán
+
+   thiết kế giao diện (cần hiểu html css)
+
+   code xử ký y sì như Sum_use_DLL
+
+   Xem code [win form use DLL](app)
