@@ -34,9 +34,7 @@
 
    thiết kế giao diện form
 
-   phần xử lý đẩy cho DLL xử lý
-   
-   
+   phần xử lý đẩy cho DLL xử lý 
 
    [xem code dùng dll](Sum_use_DLL)
 
