@@ -20,6 +20,18 @@
 
    HOẠT ĐỘNG ĐỘC LẬP VỚI NƠI DÙNG
 
-   view [code dll]()
+   khi build tạo ra .dll
 
-3. Console app 
+   view [code dll](lib_toan)
+
+3. Console app sử dụng DLL
+
+   c# windows console
+  
+   console app (.net framework) 
+
+   add references tới project lib_toan
+
+   phần xử lý đẩy cho DLL xử lý
+
+   [xem code dùng dll](sum_use_dll)
