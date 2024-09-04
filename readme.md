@@ -35,8 +35,8 @@
    thiết kế giao diện form
 
    phần xử lý đẩy cho DLL xử lý
-
-   build tạo ra exe
+   
+   
 
    [xem code dùng dll](Sum_use_DLL)
 
@@ -54,7 +54,7 @@
 
    Xem code [win form use DLL](TinhThueVAT)
 
-   khi build tạo ra exe
+   biên dịch ra exe
 
 5. WEB FORM APPLICATION
 
