@@ -36,6 +36,8 @@
 
    phần xử lý đẩy cho DLL xử lý
 
+   build tạo ra exe
+
    [xem code dùng dll](Sum_use_DLL)
 
 4. Windows form App: dùng DLL
@@ -46,8 +48,27 @@
 
    add reference tới project lib_toán
 
-   thiết kế giao diện (cần hiểu html css)
+   thiết kế giao diện (cần thẩm mĩ)
 
    code xử ký y sì như Sum_use_DLL
 
    Xem code [win form use DLL](TinhThueVAT)
+
+   khi build tạo ra exe
+
+5. WEB FORM APPLICATION
+
+   C# windows Web
+
+   Asp.net Webform Application (.Net fw)
+
+   Tạo giao diện (cần hiểu html+css)
+
+   khi biên dịch ra DLL
+
+   chạy test qua IIS Express
+
+   biên dịch ra exe
+
+   code web [tại đây](Web)
+   
