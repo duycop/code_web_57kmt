@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+        chương trình tính tổng hoá đơn
+    </title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <script src="jquery.min.js"></script>
+    <script src="myjs.js"></script>
+</head>
+<body>
+    <h1>CHƯƠNG TRÌNH TÍNH TỔNG HOÁ ĐƠN</h1>
+    <table>
+        <tr>
+            <td class="nhan_nhap_so">
+                Số tiền mặt hàng 1:
+            </td>
+            <td>
+                <input type="text" value="" id="txt_so1" />
+            </td>
+        </tr>
+        <tr>
+            <td class="nhan_nhap_so">
+                Số nợ của năm ngoái chưa trả:
+            </td>
+            <td>
+                <input name="TextBox2" type="text" value="" id="txt_so2" />
+            </td>
+        </tr>
+        <tr>
+            <td class="nhan_nhap_so">
+                Thuế VAT(%):
+            </td>
+            <td>
+                <input name="TextBox3" type="text" value="10" id="txt_thue"  />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Tính ngay và luôn" id="nut_gui" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="ketqua"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

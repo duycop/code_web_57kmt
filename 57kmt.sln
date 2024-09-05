@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum_use_DLL", "Sum_use_DLL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinhThueVAT", "TinhThueVAT\TinhThueVAT.csproj", "{840635F2-5B0F-4AB5-8D27-B716F919F401}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webABC", "webABC\webABC.csproj", "{0638BF5E-33B8-4C73-A14A-D2B4D462C89A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web_sum_v1", "webABC\web_sum_v1.csproj", "{0638BF5E-33B8-4C73-A14A-D2B4D462C89A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web_sum_v2", "web_sum_v2\web_sum_v2.csproj", "{246D2FC1-8733-46D5-A0B4-3565D49948B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0638BF5E-33B8-4C73-A14A-D2B4D462C89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0638BF5E-33B8-4C73-A14A-D2B4D462C89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0638BF5E-33B8-4C73-A14A-D2B4D462C89A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246D2FC1-8733-46D5-A0B4-3565D49948B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246D2FC1-8733-46D5-A0B4-3565D49948B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246D2FC1-8733-46D5-A0B4-3565D49948B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246D2FC1-8733-46D5-A0B4-3565D49948B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
