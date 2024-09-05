@@ -15,7 +15,7 @@ các bước đưa sp web online
 		lấy ip qua trang: canyouseeme.org
 		nếu ip is dynamic: của nhà chúng ta, dùng máy tính làm máy chủ
                  -> https://www.duckdns.org/install.jsp
-	mở firewall: mở port 80, 443
-	mở port của router (modem): 80, 443
-	reg ssl => https: wacs
-	edit web.config: auto chuyển hướng từ http -> https
+3. mở firewall: mở port 80, 443
+4. mở port của router (modem): 80, 443
+5. reg ssl => https: wacs
+6. edit web.config: auto chuyển hướng từ http -> https
