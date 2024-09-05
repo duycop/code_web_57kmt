@@ -52,3 +52,7 @@ Mỗi sv tạo 1 solution:
     + thuận lợi dễ dành bóc tách các thuộc tính
 	+ vd: json = JSON.parse(data);
 	     if(json.ok){ dst1; json.data->hiển thị } else dst2;
+
+sv sử dụng VS2022
+link github: public
+gửi link github
