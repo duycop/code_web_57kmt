@@ -8,7 +8,7 @@
 
    code c# tính toán trực tiếp: [57kmt](57kmt)
 
-   khi build tạo ra exe
+   khi build tạo ra exe, exe này chạy độc lập với vs2022
 
 2. **Thư viện liên kết động => tạo ra DLL**
 
@@ -18,13 +18,15 @@
 
    tách phần tính toán thành class
 
+   đặt tên cho project này là: **lib_toan**
+
    Chú ý: DLL PHẢI LUÔNG TUÂN THEO NGUYÊN TẮC **HOẠT ĐỘNG ĐỘC LẬP VỚI NƠI DÙNG**
 
-   khi build tạo ra .dll  (dll == dynamic link library)
+   khi build tạo ra **lib_toan.dll**  (dll == dynamic link library)
 
    view [code dll](lib_toan)
 
-3. **Console app sử dụng DLL**
+4. **Console app sử dụng DLL**
 
    c# windows console
   
@@ -34,11 +36,17 @@
 
    thiết kế giao diện form
 
-   phần xử lý đẩy cho DLL xử lý 
+   phần xử lý đẩy cho DLL xử lý
+
+   biên dịch **tạo ra exe**, nhưng trong cùng thư mục với exe có thêm file **lib_toan.dll**
+
+   chạy exe này độc lập với vs2022. nếu xoá (hoặc đổi tên) file lib_toan.dll thì sẽ báo lỗi khi chạy exe
+
+   nếu cần thay đổi logic tính toán (thêm vat 10%) thì chỉ cần buil lại DLL, copy vào thư mục chứa exe, chạy exe => kq mới do dll mới xử lý!
 
    [xem code dùng dll](Sum_use_DLL)
 
-4. **Windows form App: dùng DLL**
+6. **Windows form App: dùng DLL**
 
    C# Windows Desktop
 
@@ -50,12 +58,11 @@
 
    Code xử ký y sì như Sum_use_DLL
 
-   Biên dịch ra exe
+   Biên dịch ra exe, DLL ở cùng chỗ với exe này
 
    Xem code [win form use DLL](TinhThueVAT)
 
-
-5. **WEB FORM APPLICATION**
+7. **WEB FORM APPLICATION**
 
    C# windows Web
 
@@ -67,11 +74,11 @@
 
    chạy test qua IIS Express
 
-   biên dịch ra exe
+   biên dịch ra DLL, trong thư mục này chứa 2 DLL: 1 DLL của web và 1 là lib_toan.dll
 
    code web [tại đây](webABC)
 
-6. **WEB FORM ~ API**
+8. **WEB FORM ~ API**
 
    Sử dụng index.html+css làm layout (KHÔNG kéo thả từ toolbox các đối tượng asp.net)
 
@@ -103,6 +110,8 @@
 
       - Gửi lại client kết quả đã xử lý bằng lệnh: **this.Response.Write(kq);**
 
+   biên dịch ra DLL, kèm theo lib_toan.dll
+   
    code web v2 [xem code](web_sum_v2)
    
    
