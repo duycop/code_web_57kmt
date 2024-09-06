@@ -29,8 +29,34 @@ cách làm:
 	sử dụng DLL lib_toán => kq
 	gửi lại: this.Response.Write(kq);
 
+-----------------------------------------------
+CÁCH ĐƯA WEB LÊN IIS
+1. Mở control panel
+2. Tìm kiếm 'fe' => chọn 'Turn Windows features on or off'
+3. Tìm đến mục '.Net FrameWork 3.5 (Includes .NET 2.0 and 3.0)': tích hết trong đó
+4. Tìm đến mục '.Net FrameWork 4.8 Advanced Services': tích hết trong đó
+5. Tìm đến mục 'Internet Information Service': tích hết trong đó
+6. về windows tìm kiếm IIS => chạy 'Internet Information Services (IIS) Manager'
+7. add Website... => mở hộp thoại, điền các thông tin sau:
+	- tên : để phân biệt khi có nhiều website
+	- Physical path: thư mục chứa web
+	- Host name : nhập domain vào
+8. xử lý domain:
+	- loại fake (ko có thật): edit file c:\WINDOWS\SYSTEM32\Drivers\etc\hosts : thêm dòng '127.0.0.1 57kmt.com'
+	- loại thật xịn: mua mất tiền và được hướng dẫn cách trỏ ip về host (cần ip tĩnh)
+	- loại thật free, dùng được với ip động: www.duckdns.org
+	    + ánh xạ ip wan public tới domain vừa đăng ký, xem ip này từ canyouseeme.org
+		+ cần mở port 80,443 trên firewall của máy tính dự định làm máy chủ (host)
+		+ mở port 80,443 trên router modem (còn gọi là NAT PORT, hoặc Forward port)
+		+ check lại với: canyouseeme.org nếu port 80,443 mở là ok
+		+ xem thêm mục instal của www.duckdns.org để biết cách tự động cập nhật ip động vào domain free
+9. xử lý thư mục chứa web (Physical path)
+   copy những file sau vào:
+   - thư mục bin: copy DLL  (dll là kết quả biên dịch từ code c#)
+   - ảnh, js, css, html, aspx
 
----------
+   chú ý không copy: *.aspx.cs  => ko copy code
+-----------------------------------------------
 BÀI TẬP VỀ NHÀ:
 Mỗi sv tạo 1 solution:
  - project console1: xử lý bài toán đơn giản nào đó
