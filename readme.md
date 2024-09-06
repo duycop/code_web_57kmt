@@ -89,19 +89,19 @@
    
    code C#: add web form, đặt tên là api  => sẽ tạo ra api.aspx (nơi tạo giao diện của bài 5), và api.aspx.cs (code behide chứa code c#)
 
-   viết code trong sự kiện Page_Load của api.aspx.cs
+   viết code trong sự kiện Page_Load của api.aspx.cs :
 
-   để lấy chuỗi trong biến 'so1' gửi lên ở dạng POST, dùng lệnh:  **String so1 = this.Request.Form["so1"];**
+      - để lấy chuỗi trong biến 'so1' gửi lên ở dạng POST, dùng lệnh:  **String so1 = this.Request.Form["so1"];**
    
-   để lấy chuỗi trong biến 'so1' gửi lên ở dạng GET, dùng lệnh:  String so1 = this.Request.QueryString["so1"];
+      - để lấy chuỗi trong biến 'so1' gửi lên ở dạng GET, dùng lệnh:  String so1 = this.Request.QueryString["so1"];
 
-   để lấy chuỗi trong biến 'so1' gửi lên ở trong COOKIE, dùng lệnh:  String so1 = this.Request.Cookies["so1"].Value;
+      - để lấy chuỗi trong biến 'so1' gửi lên ở trong COOKIE, dùng lệnh:  String so1 = this.Request.Cookies["so1"].Value;
 
-   để lấy chuỗi trong biến 'so1' CÓ SẴN TRÊN SERVER VÀ Ở TRONG SESSION, dùng lệnh:  String so1 = (String)this.Session["so1"];
+      - để lấy chuỗi trong biến 'so1' CÓ SẴN TRÊN SERVER VÀ Ở TRONG SESSION, dùng lệnh:  String so1 = (String)this.Session["so1"];
 
-   Lấy hết các input cần thiết, sử dụng DLL để xử lý => nhận được kết quả (kq)
+      - Lấy hết các input cần thiết, sử dụng DLL để xử lý => nhận được kết quả (kq)
 
-   Gửi lại client kết quả đã xử lý bằng lệnh: **this.Response.Write(kq);**
+      - Gửi lại client kết quả đã xử lý bằng lệnh: **this.Response.Write(kq);**
 
    code web v2 [xem code](web_sum_v2)
    
