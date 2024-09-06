@@ -45,17 +45,22 @@ CÁCH ĐƯA WEB LÊN IIS
 	- loại fake (ko có thật): edit file c:\WINDOWS\SYSTEM32\Drivers\etc\hosts : thêm dòng '127.0.0.1 57kmt.com'
 	- loại thật xịn: mua mất tiền và được hướng dẫn cách trỏ ip về host (cần ip tĩnh)
 	- loại thật free, dùng được với ip động: www.duckdns.org
-	    + ánh xạ ip wan public tới domain vừa đăng ký, xem ip này từ canyouseeme.org
-		+ cần mở port 80,443 trên firewall của máy tính dự định làm máy chủ (host)
-		+ mở port 80,443 trên router modem (còn gọi là NAT PORT, hoặc Forward port)
-		+ check lại với: canyouseeme.org nếu port 80,443 mở là ok
-		+ xem thêm mục instal của www.duckdns.org để biết cách tự động cập nhật ip động vào domain free
+	  + ánh xạ ip wan public tới domain vừa đăng ký, xem ip này từ canyouseeme.org
+	  + cần mở port 80,443 trên firewall của máy tính dự định làm máy chủ (host)
+	  + mở port 80,443 trên router modem (còn gọi là NAT PORT, hoặc Forward port)
+	  + check lại với: canyouseeme.org nếu port 80,443 mở là ok
+	  + xem thêm mục instal của www.duckdns.org để biết cách tự động cập nhật ip động vào domain free
 9. xử lý thư mục chứa web (Physical path)
    copy những file sau vào:
-   - thư mục bin: copy DLL  (dll là kết quả biên dịch từ code c#)
-   - ảnh, js, css, html, aspx
+	- thư mục bin: copy DLL  (dll là kết quả biên dịch từ code c#)
+	- ảnh, js, css, html, aspx, ashx
+	- web.config
+	- global.
 
    chú ý không copy: *.aspx.cs  => ko copy code
+10. đăng ký SSL, để có thể truy cập từ https: 
+	sử dụng tool: win-acme
+11. Sửa file web.config
 -----------------------------------------------
 BÀI TẬP VỀ NHÀ:
 Mỗi sv tạo 1 solution:
