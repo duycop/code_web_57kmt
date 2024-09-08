@@ -2,6 +2,8 @@
 
 1. **Project console app:** 
 
+   ![](57kmt/create_solution.png)
+
    c# windows console
 
    console app (.Net framework)
@@ -10,7 +12,7 @@
 
    khi build tạo ra exe, exe này chạy độc lập với vs2022
 
-2. **Thư viện liên kết động => tạo ra DLL**
+3. **Thư viện liên kết động => tạo ra DLL**
 
    ![](lib_toan/add_project_dll.png)
    
