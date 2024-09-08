@@ -12,9 +12,11 @@
 
 2. **Thư viện liên kết động => tạo ra DLL**
 
+   ![](lib_toan/add_project_dll.png)
+   
    c# windows library
 
-   class library (.Net framework) 
+   class library (.Net framework)   
 
    tách phần tính toán thành class
 
@@ -28,11 +30,15 @@
 
 4. **Console app sử dụng DLL**
 
+   ![](Sum_use_DLL/add_project_console.png)
+
    c# windows console
   
    console app (.net framework) 
 
    add references tới project lib_toan
+
+   ![](Sum_use_DLL/tham_chieu_dll.png)
 
    thiết kế giao diện form
 
@@ -48,6 +54,8 @@
 
 6. **Windows form App: dùng DLL**
 
+   ![](TinhThueVAT/add_project_window_form.png)
+
    C# Windows Desktop
 
    Windows form application (.Net framework) 
@@ -62,8 +70,10 @@
 
    Xem code [win form use DLL](TinhThueVAT)
 
-7. **WEB FORM APPLICATION**
+8. **WEB FORM APPLICATION**
 
+   ![](web_sum_v2/new_project_v2.jpg)
+   
    C# windows Web
 
    Asp.net Webform Application (.Net fw)
@@ -78,7 +88,7 @@
 
    code web [tại đây](webABC)
 
-8. **WEB FORM ~ API**
+10. **WEB FORM ~ API**
    ![](web_sum_v2/new_project_v2.jpg)
 
    add new project như hình
