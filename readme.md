@@ -79,7 +79,10 @@
    code web [tại đây](webABC)
 
 8. **WEB FORM ~ API**
+   ![](web_sum_v2/new_project_v2.jpg)
 
+   add new project như hình
+   
    Sử dụng index.html+css làm layout (KHÔNG kéo thả từ toolbox các đối tượng asp.net)
 
    Sử dụng thư viện javascript: **jquery.min.js**
